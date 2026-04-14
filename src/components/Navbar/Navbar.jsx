@@ -7,7 +7,7 @@ import { TfiStatsUp } from 'react-icons/tfi'
 export const Navbar = () => {
     const [active, setActive] = useState('home');
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar bg-base-100 shadow-sm lg:mb-20">
             <div className="navbar-start lg:pl-40">
                 <a className="btn btn-ghost text-xl"><span className='font-bold'>Keen<span className='text-[#244D3F]'>Keeper</span>
                 </span>
