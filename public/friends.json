@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "John Doe",
-    "picture": "https://example.com/photo1.jpg",
+    "picture": "/assets/men11.jpg",
     "email": "john@example.com",
     "days_since_contact": 12,
     "status": "overdue",
@@ -13,8 +13,8 @@
   },
   {
     "id": 2,
-    "name": "Sarah Ahmed",
-    "picture": "https://example.com/photo2.jpg",
+    "name": "Shakib Ahmed",
+    "picture": "/assets/men2.jpg",
     "email": "sarah.ahmed@example.com",
     "days_since_contact": 3,
     "status": "on-track",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Michael Brown",
-    "picture": "https://example.com/photo3.jpg",
+    "picture": "/assets/men3.jpg",
     "email": "michael.brown@example.com",
     "days_since_contact": 25,
     "status": "almost due",
@@ -37,8 +37,8 @@
   },
   {
     "id": 4,
-    "name": "Ayesha Khan",
-    "picture": "https://example.com/photo4.jpg",
+    "name": "Maruf Khan",
+    "picture": "/assets/men4.jpg",
     "email": "ayesha.khan@example.com",
     "days_since_contact": 1,
     "status": "on-track",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "David Lee",
-    "picture": "https://example.com/photo5.jpg",
+    "picture": "/assets/men5.jpg",
     "email": "david.lee@example.com",
     "days_since_contact": 18,
     "status": "overdue",
@@ -61,8 +61,8 @@
   },
   {
     "id": 6,
-    "name": "Nusrat Jahan",
-    "picture": "https://example.com/photo6.jpg",
+    "name": "Fariz Sheikh",
+    "picture": "/assets/men6.jpg",
     "email": "nusrat.jahan@example.com",
     "days_since_contact": 6,
     "status": "almost due",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Carlos Mendes",
-    "picture": "https://example.com/photo7.jpg",
+    "picture": "/assets/men7.jpg",
     "email": "carlos.mendes@example.com",
     "days_since_contact": 40,
     "status": "overdue",
@@ -85,8 +85,8 @@
   },
   {
     "id": 8,
-    "name": "Emily Watson",
-    "picture": "https://example.com/photo8.jpg",
+    "name": "Enderson joe",
+    "picture": "/assets/men8.jpg",
     "email": "emily.watson@example.com",
     "days_since_contact": 9,
     "status": "on-track",
@@ -98,7 +98,7 @@
   {
     "id": 9,
     "name": "Rafiq Hassan",
-    "picture": "https://example.com/photo9.jpg",
+    "picture": "/assets/men9.jpg",
     "email": "rafiq.hassan@example.com",
     "days_since_contact": 14,
     "status": "almost due",
@@ -109,8 +109,8 @@
   },
   {
     "id": 10,
-    "name": "Olivia Smith",
-    "picture": "https://example.com/photo10.jpg",
+    "name": "Steve Smith",
+    "picture": "/assets/men10.jpg",
     "email": "olivia.smith@example.com",
     "days_since_contact": 2,
     "status": "on-track",

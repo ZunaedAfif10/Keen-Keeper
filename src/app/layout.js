@@ -1,6 +1,7 @@
 import { Geist } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar/Navbar";
+import FriendProvider from "@/context/FriendProvider";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -18,8 +19,10 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col bg-[#F8FAFC]">
         <Navbar></Navbar>
-        {children}
-        </body>
+        <FriendProvider>
+          {children}
+        </FriendProvider>
+      </body>
     </html>
   );
 }
