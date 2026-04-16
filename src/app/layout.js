@@ -18,8 +18,8 @@ export default function RootLayout({ children }) {
       className={geist.className}
     >
       <body className="min-h-full flex flex-col bg-[#F8FAFC]">
-        <Navbar></Navbar>
         <FriendProvider>
+        <Navbar></Navbar>
           {children}
         </FriendProvider>
       </body>

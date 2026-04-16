@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Info = () => {
   return (<>
-    <div className='pt-10 max-w-4/6 lg:grid grid-cols-4 gap-6 mx-auto text-center'>
+    <div className='pt-10 max-w-4/6 grid lg:grid-cols-4 gap-6 mx-auto text-center'>
         <div className='p-8 bg-white rounded-2xl'>
             <h3 className='font-bold text-3xl pb-3.5'>10</h3>
             <p className='text-gray-500'>Total Friends</p>

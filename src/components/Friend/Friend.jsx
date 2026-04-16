@@ -1,13 +1,15 @@
+import { FriendContext } from '@/context/FriendProvider';
 import Link from 'next/link'
-import React from 'react'
+import React, { useContext } from 'react'
 
 export const Friend = ({friend}) => {
 //   console.log(friend);
+    const {active, setActive} = useContext(FriendContext);
     const handleCard = () =>{
-        // console.log('clicked')
+        setActive('');
     }
     return (
-    <Link href={`/friend/${friend.id}`} className='p-8 bg-white rounded-2xl text-center' onClick={()=>handleCard()}>
+    <Link href={`/friend/${friend.id}`} className='p-8 bg-white rounded-2xl text-center shadow-sm' onClick={()=>handleCard()}>
             <div className='overflow-hidden max-w-[100] h-[100] rounded-full mx-auto mb-3' >
             <img src={friend.picture} alt="" />
             </div>
@@ -20,7 +22,7 @@ export const Friend = ({friend}) => {
                     )
                 }
             </div>
-            <div className="badge badge-soft bg-red-700 rounded-full text-white">{friend.status}</div>
+            <div className="badge badge-soft bg-red-700 rounded-full text-white ">{friend.status}</div>
         </Link>
   )
 }
