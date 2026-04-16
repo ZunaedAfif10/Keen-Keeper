@@ -18,9 +18,22 @@ export default function page({ params }) {
       });
   }, []);
   const { id } = useParams();
+  const { users, setUsers , allUsers , setAllUsers} = useContext(FriendContext);
+  // console.log(user);
 
   const findId = friends.find(find => find.id == id)
-  console.log(findId?.name);
+  const handleInterect = (par) => {
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    const date = new Date().toLocaleDateString("en-US", options);
+    const obj = {
+      Name: findId?.name,
+      Date: date,
+      Type: par
+    }
+    setAllUsers([...allUsers,obj]);
+  }
+
+  // console.log(findId?.name);
   // console.log(id);
   return (
     <div className="lg:max-w-4/6 mx-auto lg:flex gap-6 lg:pb-20 mt-4">
@@ -62,22 +75,21 @@ export default function page({ params }) {
           </div>
         </div>
         <div className='p-8 bg-white rounded-xl shadow-sm'>
-            <div className="flex justify-between">
+          <div className="flex justify-between">
             <h3 className=' text-[1.4rem] pb-3.5'>Relationship Goal</h3>
             <button className="btn">Edit</button>
-            </div>
-            <p className='text-gray-500 text-[1.2rem]'>Connect every <span className="font-bold text-black">30 days</span></p>
+          </div>
+          <p className='text-gray-500 text-[1.2rem]'>Connect every <span className="font-bold text-black">30 days</span></p>
         </div>
         <div className='p-8 bg-white rounded-xl shadow-sm'>
-            <h3 className=' text-[1.4rem] pb-3.5'>Quick Check-In</h3>
-            <div className="grid lg:grid-cols-3 gap-5">
-              <button className="flex flex-col items-center justify-center px-24 py-5 gap-1.5 bg-[#F8FAFC] rounded-xl border border-gray-200 hover:bg-gray-100 hover:scale-110 active:scale-100 transition"><MdOutlineWifiCalling3 className="text-4xl" /><span>Call</span></button>
-              <button className="flex flex-col items-center justify-center px-24 py-5 gap-1.5 bg-[#F8FAFC] rounded-xl border border-gray-200 hover:bg-gray-100 hover:scale-110 active:scale-100 transition"><BsChatLeftText className="text-4xl" /><span>Text</span></button>
-              <button className="flex flex-col items-center justify-center px-24 py-5 gap-1.5 bg-[#F8FAFC] rounded-xl border border-gray-200 hover:bg-gray-100 hover:scale-110 active:scale-100 transition"><MdOutlineVideocam className="text-4xl" /><span>Video</span></button>
-            </div>
+          <h3 className=' text-[1.4rem] pb-3.5'>Quick Check-In</h3>
+          <div className="grid lg:grid-cols-3 gap-5">
+            <button className="flex flex-col items-center justify-center px-24 py-5 gap-1.5 bg-[#F8FAFC] rounded-xl border border-gray-200 hover:bg-gray-100 hover:scale-110 active:scale-100 transition" onClick={() => handleInterect('Call')}><MdOutlineWifiCalling3 className="text-4xl" /><span>Call</span></button>
+            <button className="flex flex-col items-center justify-center px-24 py-5 gap-1.5 bg-[#F8FAFC] rounded-xl border border-gray-200 hover:bg-gray-100 hover:scale-110 active:scale-100 transition" onClick={() => handleInterect('Text')}><BsChatLeftText className="text-4xl" /><span>Text</span></button>
+            <button className="flex flex-col items-center justify-center px-24 py-5 gap-1.5 bg-[#F8FAFC] rounded-xl border border-gray-200 hover:bg-gray-100 hover:scale-110 active:scale-100 transition" onClick={() => handleInterect('Video')}><MdOutlineVideocam className="text-4xl" /><span>Video</span></button>
+          </div>
         </div>
       </div>
     </div>
   )
 }
-
