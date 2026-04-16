@@ -8,7 +8,7 @@ export default function page() {
     // console.log(users);
     useEffect(() => {
         setUsers(allUsers);
-    }, [allUsers]);
+    }, []);
     console.log(allUsers)
     const handleFilter = (par) => {
         const filtered = allUsers.filter(user => user.Type === par);
