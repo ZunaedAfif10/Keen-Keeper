@@ -15,9 +15,9 @@ export const Friends = () => {
 
     // console.log(friends);
     return (
-        <div className='lg:max-w-4/6 max-w-[90%] mx-auto'>
+        <div className='lg:max-w-4/6 max-w-[90%] mx-auto lg:pb-10'>
             <h4 className='font-bold text-2xl pb-4'>Your Friends</h4>
-            <div className='grid lg:grid-cols-4 gap-6'>
+            <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-6'>
             {
                 friends.map(friend=>
                     <Friend key={friend.id} friend={friend}></Friend>

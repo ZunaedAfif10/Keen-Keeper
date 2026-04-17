@@ -22,7 +22,7 @@ export const Friend = ({friend}) => {
                     )
                 }
             </div>
-            <div className="badge badge-soft bg-red-700 rounded-full text-white ">{friend.status}</div>
+            <div className={`"badge badge-soft inline-block px-4 ${friend.status === 'overdue' ? 'bg-red-700' : friend.status === 'almost due' ? 'bg-[#EFAD44]' : 'bg-[#244D3F]'} rounded-full text-white "`}>{friend.status}</div>
         </Link>
   )
 }

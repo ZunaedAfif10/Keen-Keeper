@@ -19,9 +19,9 @@ console.log(call.length,text.length,video.length);
 
 
   return (
-    <div className="lg:pb-10">
-      <h1 className="font-bold text-5xl pb-6 lg:max-w-4/6 mx-auto w-full">Friendship Analytics</h1>
-      <div className="lg:max-w-4/6 mx-auto bg-white shadow-sm rounded-2xl" style={{ width: "100%", height: 400 }}>
+    <div className="lg:pb-10 pt-8">
+      <h1 className="font-bold text-4xl pl-4 lg:text-5xl pb-6  lg:max-w-4/6 mx-auto ">Friendship Analytics</h1>
+      <div className="lg:max-w-4/6 max-w-[90%] mx-auto bg-white shadow-sm rounded-2xl" style={{ width: "100%", height: 400 }}>
         <h2 className="font-medium text-2xl pt-8 pl-8 text-gray-600">By Interaction Type</h2>
         <ResponsiveContainer>
           <PieChart margin={{ bottom: 100 }}>

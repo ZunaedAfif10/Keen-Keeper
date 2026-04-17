@@ -6,6 +6,7 @@ import { BsChatLeftText } from "react-icons/bs";
 import { FiArchive } from "react-icons/fi";
 import { MdOutlineVideocam, MdOutlineWifiCalling3 } from "react-icons/md";
 import { RiDeleteBin5Line, RiNotificationSnoozeLine } from "react-icons/ri";
+import { toast, ToastContainer } from "react-toastify";
 
 
 export default function page({ params }) {
@@ -31,12 +32,13 @@ export default function page({ params }) {
       Type: par
     }
     setAllUsers([...allUsers,obj]);
+    toast.success(`${par} with ${findId.name}`);
   }
 
   // console.log(findId?.name);
   // console.log(id);
   return (
-    <div className="lg:max-w-4/6 mx-auto lg:flex gap-6 lg:pb-20 mt-4">
+    <div className="lg:max-w-4/6 mx-auto md:grid md:grid-cols-2 lg:flex gap-6 lg:pb-20 mt-4">
       <div className="space-y-4">
         <div className="bg-white p-10 text-center rounded-xl shadow-sm">
           <div className='overflow-hidden max-w-[100] h-[100] rounded-full mx-auto mb-3' >
@@ -87,6 +89,7 @@ export default function page({ params }) {
             <button className="flex flex-col items-center justify-center px-24 py-5 gap-1.5 bg-[#F8FAFC] rounded-xl border border-gray-200 hover:bg-gray-100 hover:scale-110 active:scale-100 transition" onClick={() => handleInterect('Call')}><MdOutlineWifiCalling3 className="text-4xl" /><span>Call</span></button>
             <button className="flex flex-col items-center justify-center px-24 py-5 gap-1.5 bg-[#F8FAFC] rounded-xl border border-gray-200 hover:bg-gray-100 hover:scale-110 active:scale-100 transition" onClick={() => handleInterect('Text')}><BsChatLeftText className="text-4xl" /><span>Text</span></button>
             <button className="flex flex-col items-center justify-center px-24 py-5 gap-1.5 bg-[#F8FAFC] rounded-xl border border-gray-200 hover:bg-gray-100 hover:scale-110 active:scale-100 transition" onClick={() => handleInterect('Video')}><MdOutlineVideocam className="text-4xl" /><span>Video</span></button>
+            <ToastContainer position="top-center" />
           </div>
         </div>
       </div>

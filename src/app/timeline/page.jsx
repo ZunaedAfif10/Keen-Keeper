@@ -3,6 +3,7 @@ import { FriendContext } from '@/context/FriendProvider'
 import React, { useContext, useEffect } from 'react'
 import { FaAngleDown } from 'react-icons/fa';
 
+
 export default function page() {
     const { users, setUsers, allUsers, setAllUsers } = useContext(FriendContext);
     // console.log(users);
@@ -15,7 +16,7 @@ export default function page() {
         setUsers(filtered);
     }
     return (
-        <div className='lg:max-w-4/6 mx-auto w-full pb-10'>
+        <div className='lg:max-w-4/6 mx-auto w-full p-8 pb-10'>
             <h1 className='font-bold text-4xl pb-6 '>Timeline</h1>
             <div className="dropdown dropdown-bottom">
                 <div tabIndex={0} role="button" className="btn m-1 text-gray-500">Filter timeline <FaAngleDown className='ml-14' /></div>
