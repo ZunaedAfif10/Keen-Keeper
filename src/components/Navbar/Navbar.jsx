@@ -30,12 +30,12 @@ export const Navbar = () => {
     }
     return (
         <div className="navbar bg-base-100 shadow-sm lg:mb-20">
-            <div className="navbar-start lg:pl-40">
-                <a className="btn btn-ghost text-xl"><span className='font-bold'>Keen<span className='text-[#244D3F]'>Keeper</span>
+            <div className="lg:navbar-start md:navbar-start lg:pl-40">
+                <a className="btn btn-ghost text-xl lg:block md:block hidden"><span className='font-bold'>Keen<span className='text-[#244D3F]'>Keeper</span>
                 </span>
                 </a>
             </div>
-            <div className="navbar-end lg:pr-40">
+            <div className="lg:navbar-end md:navbar-end navbar-start lg:pr-40">
                 <a className={`btn flex items-center gap-1 ${active === 'home' ? 'bg-green-900' : 'btn-ghost'}`} onClick={() => handleClick('home')}>
                     <GoHome className={active === 'home' ? 'text-white text-xl' : 'text-gray-500'}></GoHome><span className={`${active === 'home' ? 'text-white' : 'text-gray-500'}`}>Home</span>
                 </a>
