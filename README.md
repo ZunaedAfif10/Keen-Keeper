@@ -102,14 +102,6 @@ npm start
 
 ---
 
-## 💡 Why this matters
-
-- Shows you understand real-world workflow
-- Makes your project **runnable by recruiters/devs**
-- Adds professionalism instantly
-
----
-
 ## 📁 Folder Structure
 
 ```bash
