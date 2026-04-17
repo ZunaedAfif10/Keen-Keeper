@@ -152,10 +152,3 @@ Feel free to use and modify it for your own projects.
 If you like this project, consider giving it a **star ⭐** on GitHub — it helps others discover it!
 
 ---
-
-## 🚀 Future Improvements
-
-- Add authentication system
-- Improve UI/UX design
-- Add database integration
-- Implement advanced task filtering
