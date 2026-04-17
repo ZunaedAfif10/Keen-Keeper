@@ -137,8 +137,6 @@ public/ # Static assets
 **Zunaed Afif**
 
 - GitHub: https://github.com/ZunaedAfif10
-- Portfolio: (add later if you have one)
-- LinkedIn: (optional)
 
 ---
 
