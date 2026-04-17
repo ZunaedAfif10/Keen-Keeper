@@ -26,6 +26,13 @@ It provides a smooth and intuitive interface to help users organize their daily 
 ---
 
 ## 🖼️ App Preview
+<img width="1919" height="912" alt="Screenshot 2026-04-17 174402" src="https://github.com/user-attachments/assets/c12dfc4d-5b0e-4cb0-921f-8a3d5a80bf58" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="1919" height="875" alt="Screenshot 2026-04-17 175535" src="https://github.com/user-attachments/assets/39b3221f-8dee-4978-859f-4a2e5eb55004" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="1919" height="911" alt="Screenshot 2026-04-17 181014" src="https://github.com/user-attachments/assets/46bb78ce-087b-40b1-9ad0-1a3b76f9f2a2" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="1919" height="726" alt="Screenshot 2026-04-17 175615" src="https://github.com/user-attachments/assets/dcbe9659-5d03-46c3-9cf8-0a5b38d35a75" />
 
 ---
 
